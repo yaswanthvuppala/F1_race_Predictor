@@ -1,0 +1,360 @@
+race_id,season,race,date,driver,team,grid,position,points,status
+2024_1,2024,Bahrain Grand Prix,2024-03-02,VER,Red Bull Racing,1.0,1.0,26.0,Finished
+2024_1,2024,Bahrain Grand Prix,2024-03-02,PER,Red Bull Racing,5.0,2.0,18.0,Finished
+2024_1,2024,Bahrain Grand Prix,2024-03-02,SAI,Ferrari,4.0,3.0,15.0,Finished
+2024_1,2024,Bahrain Grand Prix,2024-03-02,LEC,Ferrari,2.0,4.0,12.0,Finished
+2024_1,2024,Bahrain Grand Prix,2024-03-02,RUS,Mercedes,3.0,5.0,10.0,Finished
+2024_1,2024,Bahrain Grand Prix,2024-03-02,NOR,McLaren,7.0,6.0,8.0,Finished
+2024_1,2024,Bahrain Grand Prix,2024-03-02,HAM,Mercedes,9.0,7.0,6.0,Finished
+2024_1,2024,Bahrain Grand Prix,2024-03-02,PIA,McLaren,8.0,8.0,4.0,Finished
+2024_1,2024,Bahrain Grand Prix,2024-03-02,ALO,Aston Martin,6.0,9.0,2.0,Finished
+2024_1,2024,Bahrain Grand Prix,2024-03-02,STR,Aston Martin,12.0,10.0,1.0,Finished
+2024_1,2024,Bahrain Grand Prix,2024-03-02,ZHO,Kick Sauber,17.0,11.0,0.0,Lapped
+2024_1,2024,Bahrain Grand Prix,2024-03-02,MAG,Haas F1 Team,15.0,12.0,0.0,Lapped
+2024_1,2024,Bahrain Grand Prix,2024-03-02,RIC,RB,14.0,13.0,0.0,Lapped
+2024_1,2024,Bahrain Grand Prix,2024-03-02,TSU,RB,11.0,14.0,0.0,Lapped
+2024_1,2024,Bahrain Grand Prix,2024-03-02,ALB,Williams,13.0,15.0,0.0,Lapped
+2024_1,2024,Bahrain Grand Prix,2024-03-02,HUL,Haas F1 Team,10.0,16.0,0.0,Lapped
+2024_1,2024,Bahrain Grand Prix,2024-03-02,OCO,Alpine,19.0,17.0,0.0,Lapped
+2024_1,2024,Bahrain Grand Prix,2024-03-02,GAS,Alpine,20.0,18.0,0.0,Lapped
+2024_1,2024,Bahrain Grand Prix,2024-03-02,BOT,Kick Sauber,16.0,19.0,0.0,Lapped
+2024_1,2024,Bahrain Grand Prix,2024-03-02,SAR,Williams,18.0,20.0,0.0,Lapped
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,VER,Red Bull Racing,1.0,1.0,25.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,PER,Red Bull Racing,3.0,2.0,18.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,LEC,Ferrari,2.0,3.0,16.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,PIA,McLaren,5.0,4.0,12.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,ALO,Aston Martin,4.0,5.0,10.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,RUS,Mercedes,7.0,6.0,8.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,BEA,Ferrari,11.0,7.0,6.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,NOR,McLaren,6.0,8.0,4.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,HAM,Mercedes,8.0,9.0,2.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,HUL,Haas F1 Team,15.0,10.0,1.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,ALB,Williams,12.0,11.0,0.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,MAG,Haas F1 Team,13.0,12.0,0.0,Finished
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,OCO,Alpine,17.0,13.0,0.0,Lapped
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,SAR,Williams,19.0,14.0,0.0,Lapped
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,TSU,RB,9.0,15.0,0.0,Lapped
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,RIC,RB,14.0,16.0,0.0,Lapped
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,BOT,Kick Sauber,16.0,17.0,0.0,Lapped
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,ZHO,Kick Sauber,20.0,18.0,0.0,Lapped
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,STR,Aston Martin,10.0,19.0,0.0,Retired
+2024_2,2024,Saudi Arabian Grand Prix,2024-03-09,GAS,Alpine,18.0,20.0,0.0,Retired
+2024_3,2024,Australian Grand Prix,2024-03-24,SAI,Ferrari,2.0,1.0,25.0,Finished
+2024_3,2024,Australian Grand Prix,2024-03-24,LEC,Ferrari,4.0,2.0,19.0,Finished
+2024_3,2024,Australian Grand Prix,2024-03-24,NOR,McLaren,3.0,3.0,15.0,Finished
+2024_3,2024,Australian Grand Prix,2024-03-24,PIA,McLaren,5.0,4.0,12.0,Finished
+2024_3,2024,Australian Grand Prix,2024-03-24,PER,Red Bull Racing,6.0,5.0,10.0,Finished
+2024_3,2024,Australian Grand Prix,2024-03-24,STR,Aston Martin,9.0,6.0,8.0,Finished
+2024_3,2024,Australian Grand Prix,2024-03-24,TSU,RB,8.0,7.0,6.0,Finished
+2024_3,2024,Australian Grand Prix,2024-03-24,ALO,Aston Martin,10.0,8.0,4.0,Finished
+2024_3,2024,Australian Grand Prix,2024-03-24,HUL,Haas F1 Team,16.0,9.0,2.0,Finished
+2024_3,2024,Australian Grand Prix,2024-03-24,MAG,Haas F1 Team,14.0,10.0,1.0,Lapped
+2024_3,2024,Australian Grand Prix,2024-03-24,ALB,Williams,12.0,11.0,0.0,Lapped
+2024_3,2024,Australian Grand Prix,2024-03-24,RIC,RB,18.0,12.0,0.0,Lapped
+2024_3,2024,Australian Grand Prix,2024-03-24,GAS,Alpine,17.0,13.0,0.0,Lapped
+2024_3,2024,Australian Grand Prix,2024-03-24,BOT,Kick Sauber,13.0,14.0,0.0,Lapped
+2024_3,2024,Australian Grand Prix,2024-03-24,ZHO,Kick Sauber,19.0,15.0,0.0,Lapped
+2024_3,2024,Australian Grand Prix,2024-03-24,OCO,Alpine,15.0,16.0,0.0,Lapped
+2024_3,2024,Australian Grand Prix,2024-03-24,RUS,Mercedes,7.0,17.0,0.0,Retired
+2024_3,2024,Australian Grand Prix,2024-03-24,HAM,Mercedes,11.0,18.0,0.0,Retired
+2024_3,2024,Australian Grand Prix,2024-03-24,VER,Red Bull Racing,1.0,19.0,0.0,Retired
+2024_4,2024,Japanese Grand Prix,2024-04-07,VER,Red Bull Racing,1.0,1.0,26.0,Finished
+2024_4,2024,Japanese Grand Prix,2024-04-07,PER,Red Bull Racing,2.0,2.0,18.0,Finished
+2024_4,2024,Japanese Grand Prix,2024-04-07,SAI,Ferrari,4.0,3.0,15.0,Finished
+2024_4,2024,Japanese Grand Prix,2024-04-07,LEC,Ferrari,8.0,4.0,12.0,Finished
+2024_4,2024,Japanese Grand Prix,2024-04-07,NOR,McLaren,3.0,5.0,10.0,Finished
+2024_4,2024,Japanese Grand Prix,2024-04-07,ALO,Aston Martin,5.0,6.0,8.0,Finished
+2024_4,2024,Japanese Grand Prix,2024-04-07,RUS,Mercedes,9.0,7.0,6.0,Finished
+2024_4,2024,Japanese Grand Prix,2024-04-07,PIA,McLaren,6.0,8.0,4.0,Finished
+2024_4,2024,Japanese Grand Prix,2024-04-07,HAM,Mercedes,7.0,9.0,2.0,Finished
+2024_4,2024,Japanese Grand Prix,2024-04-07,TSU,RB,10.0,10.0,1.0,Lapped
+2024_4,2024,Japanese Grand Prix,2024-04-07,HUL,Haas F1 Team,12.0,11.0,0.0,Lapped
+2024_4,2024,Japanese Grand Prix,2024-04-07,STR,Aston Martin,16.0,12.0,0.0,Lapped
+2024_4,2024,Japanese Grand Prix,2024-04-07,MAG,Haas F1 Team,18.0,13.0,0.0,Lapped
+2024_4,2024,Japanese Grand Prix,2024-04-07,BOT,Kick Sauber,13.0,14.0,0.0,Lapped
+2024_4,2024,Japanese Grand Prix,2024-04-07,OCO,Alpine,15.0,15.0,0.0,Lapped
+2024_4,2024,Japanese Grand Prix,2024-04-07,GAS,Alpine,17.0,16.0,0.0,Lapped
+2024_4,2024,Japanese Grand Prix,2024-04-07,SAR,Williams,19.0,17.0,0.0,Lapped
+2024_4,2024,Japanese Grand Prix,2024-04-07,ZHO,Kick Sauber,20.0,18.0,0.0,Retired
+2024_4,2024,Japanese Grand Prix,2024-04-07,RIC,RB,11.0,19.0,0.0,Retired
+2024_4,2024,Japanese Grand Prix,2024-04-07,ALB,Williams,14.0,20.0,0.0,Retired
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,VER,Red Bull Racing,1.0,1.0,25.0,Finished
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,NOR,McLaren,2.0,2.0,18.0,Finished
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,LEC,Ferrari,3.0,3.0,15.0,Finished
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,PIA,McLaren,5.0,4.0,12.0,Finished
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,SAI,Ferrari,4.0,5.0,10.0,Finished
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,HAM,Mercedes,8.0,6.0,8.0,Finished
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,RUS,Mercedes,6.0,7.0,7.0,Finished
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,PER,Red Bull Racing,11.0,8.0,4.0,Finished
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,STR,Aston Martin,13.0,9.0,2.0,Finished
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,TSU,RB,7.0,10.0,1.0,Lapped
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,HUL,Haas F1 Team,10.0,11.0,0.0,Lapped
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,MAG,Haas F1 Team,18.0,12.0,0.0,Lapped
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,RIC,RB,9.0,13.0,0.0,Lapped
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,OCO,Alpine,12.0,14.0,0.0,Lapped
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,ZHO,Kick Sauber,17.0,15.0,0.0,Lapped
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,GAS,Alpine,15.0,16.0,0.0,Lapped
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,SAR,Williams,19.0,17.0,0.0,Lapped
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,BOT,Kick Sauber,16.0,18.0,0.0,Lapped
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,ALO,Aston Martin,20.0,19.0,0.0,Lapped
+2024_7,2024,Emilia Romagna Grand Prix,2024-05-19,ALB,Williams,14.0,20.0,0.0,Retired
+2024_8,2024,Monaco Grand Prix,2024-05-26,LEC,Ferrari,1.0,1.0,25.0,Finished
+2024_8,2024,Monaco Grand Prix,2024-05-26,PIA,McLaren,2.0,2.0,18.0,Finished
+2024_8,2024,Monaco Grand Prix,2024-05-26,SAI,Ferrari,3.0,3.0,15.0,Finished
+2024_8,2024,Monaco Grand Prix,2024-05-26,NOR,McLaren,4.0,4.0,12.0,Finished
+2024_8,2024,Monaco Grand Prix,2024-05-26,RUS,Mercedes,5.0,5.0,10.0,Finished
+2024_8,2024,Monaco Grand Prix,2024-05-26,VER,Red Bull Racing,6.0,6.0,8.0,Finished
+2024_8,2024,Monaco Grand Prix,2024-05-26,HAM,Mercedes,7.0,7.0,7.0,Finished
+2024_8,2024,Monaco Grand Prix,2024-05-26,TSU,RB,8.0,8.0,4.0,Lapped
+2024_8,2024,Monaco Grand Prix,2024-05-26,ALB,Williams,9.0,9.0,2.0,Lapped
+2024_8,2024,Monaco Grand Prix,2024-05-26,GAS,Alpine,10.0,10.0,1.0,Lapped
+2024_8,2024,Monaco Grand Prix,2024-05-26,ALO,Aston Martin,14.0,11.0,0.0,Lapped
+2024_8,2024,Monaco Grand Prix,2024-05-26,RIC,RB,12.0,12.0,0.0,Lapped
+2024_8,2024,Monaco Grand Prix,2024-05-26,BOT,Kick Sauber,17.0,13.0,0.0,Lapped
+2024_8,2024,Monaco Grand Prix,2024-05-26,STR,Aston Martin,13.0,14.0,0.0,Lapped
+2024_8,2024,Monaco Grand Prix,2024-05-26,SAR,Williams,15.0,15.0,0.0,Lapped
+2024_8,2024,Monaco Grand Prix,2024-05-26,ZHO,Kick Sauber,18.0,16.0,0.0,Lapped
+2024_8,2024,Monaco Grand Prix,2024-05-26,OCO,Alpine,11.0,17.0,0.0,Retired
+2024_8,2024,Monaco Grand Prix,2024-05-26,PER,Red Bull Racing,16.0,18.0,0.0,Retired
+2024_8,2024,Monaco Grand Prix,2024-05-26,HUL,Haas F1 Team,19.0,19.0,0.0,Retired
+2024_8,2024,Monaco Grand Prix,2024-05-26,MAG,Haas F1 Team,20.0,20.0,0.0,Retired
+2024_9,2024,Canadian Grand Prix,2024-06-09,VER,Red Bull Racing,2.0,1.0,25.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,NOR,McLaren,3.0,2.0,18.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,RUS,Mercedes,1.0,3.0,15.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,HAM,Mercedes,7.0,4.0,13.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,PIA,McLaren,4.0,5.0,10.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,ALO,Aston Martin,6.0,6.0,8.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,STR,Aston Martin,9.0,7.0,6.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,RIC,RB,5.0,8.0,4.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,GAS,Alpine,15.0,9.0,2.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,OCO,Alpine,18.0,10.0,1.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,HUL,Haas F1 Team,17.0,11.0,0.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,MAG,Haas F1 Team,14.0,12.0,0.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,BOT,Kick Sauber,19.0,13.0,0.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,TSU,RB,8.0,14.0,0.0,Finished
+2024_9,2024,Canadian Grand Prix,2024-06-09,ZHO,Kick Sauber,20.0,15.0,0.0,Lapped
+2024_9,2024,Canadian Grand Prix,2024-06-09,SAI,Ferrari,12.0,16.0,0.0,Retired
+2024_9,2024,Canadian Grand Prix,2024-06-09,ALB,Williams,10.0,17.0,0.0,Retired
+2024_9,2024,Canadian Grand Prix,2024-06-09,PER,Red Bull Racing,16.0,18.0,0.0,Retired
+2024_9,2024,Canadian Grand Prix,2024-06-09,LEC,Ferrari,11.0,19.0,0.0,Retired
+2024_9,2024,Canadian Grand Prix,2024-06-09,SAR,Williams,13.0,20.0,0.0,Retired
+2024_10,2024,Spanish Grand Prix,2024-06-23,VER,Red Bull Racing,2.0,1.0,25.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,NOR,McLaren,1.0,2.0,19.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,HAM,Mercedes,3.0,3.0,15.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,RUS,Mercedes,4.0,4.0,12.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,LEC,Ferrari,5.0,5.0,10.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,SAI,Ferrari,6.0,6.0,8.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,PIA,McLaren,9.0,7.0,6.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,PER,Red Bull Racing,11.0,8.0,4.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,GAS,Alpine,7.0,9.0,2.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,OCO,Alpine,8.0,10.0,1.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,HUL,Haas F1 Team,13.0,11.0,0.0,Finished
+2024_10,2024,Spanish Grand Prix,2024-06-23,ALO,Aston Martin,10.0,12.0,0.0,Lapped
+2024_10,2024,Spanish Grand Prix,2024-06-23,ZHO,Kick Sauber,15.0,13.0,0.0,Lapped
+2024_10,2024,Spanish Grand Prix,2024-06-23,STR,Aston Martin,14.0,14.0,0.0,Lapped
+2024_10,2024,Spanish Grand Prix,2024-06-23,RIC,RB,18.0,15.0,0.0,Lapped
+2024_10,2024,Spanish Grand Prix,2024-06-23,BOT,Kick Sauber,12.0,16.0,0.0,Lapped
+2024_10,2024,Spanish Grand Prix,2024-06-23,MAG,Haas F1 Team,16.0,17.0,0.0,Lapped
+2024_10,2024,Spanish Grand Prix,2024-06-23,ALB,Williams,20.0,18.0,0.0,Lapped
+2024_10,2024,Spanish Grand Prix,2024-06-23,TSU,RB,17.0,19.0,0.0,Lapped
+2024_10,2024,Spanish Grand Prix,2024-06-23,SAR,Williams,19.0,20.0,0.0,Lapped
+2024_12,2024,British Grand Prix,2024-07-07,HAM,Mercedes,2.0,1.0,25.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,VER,Red Bull Racing,4.0,2.0,18.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,NOR,McLaren,3.0,3.0,15.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,PIA,McLaren,5.0,4.0,12.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,SAI,Ferrari,7.0,5.0,11.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,HUL,Haas F1 Team,6.0,6.0,8.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,STR,Aston Martin,8.0,7.0,6.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,ALO,Aston Martin,10.0,8.0,4.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,ALB,Williams,9.0,9.0,2.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,TSU,RB,13.0,10.0,1.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,SAR,Williams,12.0,11.0,0.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,MAG,Haas F1 Team,17.0,12.0,0.0,Finished
+2024_12,2024,British Grand Prix,2024-07-07,RIC,RB,15.0,13.0,0.0,Lapped
+2024_12,2024,British Grand Prix,2024-07-07,LEC,Ferrari,11.0,14.0,0.0,Lapped
+2024_12,2024,British Grand Prix,2024-07-07,BOT,Kick Sauber,16.0,15.0,0.0,Lapped
+2024_12,2024,British Grand Prix,2024-07-07,OCO,Alpine,18.0,16.0,0.0,Lapped
+2024_12,2024,British Grand Prix,2024-07-07,PER,Red Bull Racing,20.0,17.0,0.0,Lapped
+2024_12,2024,British Grand Prix,2024-07-07,ZHO,Kick Sauber,14.0,18.0,0.0,Lapped
+2024_12,2024,British Grand Prix,2024-07-07,RUS,Mercedes,1.0,19.0,0.0,Retired
+2024_12,2024,British Grand Prix,2024-07-07,GAS,Alpine,19.0,20.0,0.0,Did not start
+2024_13,2024,Hungarian Grand Prix,2024-07-21,PIA,McLaren,2.0,1.0,25.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,NOR,McLaren,1.0,2.0,18.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,HAM,Mercedes,5.0,3.0,15.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,LEC,Ferrari,6.0,4.0,12.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,VER,Red Bull Racing,3.0,5.0,10.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,SAI,Ferrari,4.0,6.0,8.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,PER,Red Bull Racing,16.0,7.0,6.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,RUS,Mercedes,17.0,8.0,5.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,TSU,RB,10.0,9.0,2.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,STR,Aston Martin,8.0,10.0,1.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,ALO,Aston Martin,7.0,11.0,0.0,Finished
+2024_13,2024,Hungarian Grand Prix,2024-07-21,RIC,RB,9.0,12.0,0.0,Lapped
+2024_13,2024,Hungarian Grand Prix,2024-07-21,HUL,Haas F1 Team,11.0,13.0,0.0,Lapped
+2024_13,2024,Hungarian Grand Prix,2024-07-21,ALB,Williams,13.0,14.0,0.0,Lapped
+2024_13,2024,Hungarian Grand Prix,2024-07-21,MAG,Haas F1 Team,15.0,15.0,0.0,Lapped
+2024_13,2024,Hungarian Grand Prix,2024-07-21,BOT,Kick Sauber,12.0,16.0,0.0,Lapped
+2024_13,2024,Hungarian Grand Prix,2024-07-21,SAR,Williams,14.0,17.0,0.0,Lapped
+2024_13,2024,Hungarian Grand Prix,2024-07-21,OCO,Alpine,19.0,18.0,0.0,Lapped
+2024_13,2024,Hungarian Grand Prix,2024-07-21,ZHO,Kick Sauber,18.0,19.0,0.0,Lapped
+2024_13,2024,Hungarian Grand Prix,2024-07-21,GAS,Alpine,20.0,20.0,0.0,Retired
+2024_14,2024,Belgian Grand Prix,2024-07-28,HAM,Mercedes,3.0,1.0,25.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,PIA,McLaren,5.0,2.0,18.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,LEC,Ferrari,1.0,3.0,15.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,VER,Red Bull Racing,11.0,4.0,12.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,NOR,McLaren,4.0,5.0,10.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,SAI,Ferrari,7.0,6.0,8.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,PER,Red Bull Racing,2.0,7.0,7.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,ALO,Aston Martin,8.0,8.0,4.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,OCO,Alpine,9.0,9.0,2.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,RIC,RB,13.0,10.0,1.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,STR,Aston Martin,15.0,11.0,0.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,ALB,Williams,10.0,12.0,0.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,GAS,Alpine,12.0,13.0,0.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,MAG,Haas F1 Team,17.0,14.0,0.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,BOT,Kick Sauber,14.0,15.0,0.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,TSU,RB,20.0,16.0,0.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,SAR,Williams,18.0,17.0,0.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,HUL,Haas F1 Team,16.0,18.0,0.0,Finished
+2024_14,2024,Belgian Grand Prix,2024-07-28,ZHO,Kick Sauber,19.0,19.0,0.0,Retired
+2024_14,2024,Belgian Grand Prix,2024-07-28,RUS,Mercedes,6.0,20.0,0.0,Disqualified
+2024_15,2024,Dutch Grand Prix,2024-08-25,NOR,McLaren,1.0,1.0,26.0,Finished
+2024_15,2024,Dutch Grand Prix,2024-08-25,VER,Red Bull Racing,2.0,2.0,18.0,Finished
+2024_15,2024,Dutch Grand Prix,2024-08-25,LEC,Ferrari,6.0,3.0,15.0,Finished
+2024_15,2024,Dutch Grand Prix,2024-08-25,PIA,McLaren,3.0,4.0,12.0,Finished
+2024_15,2024,Dutch Grand Prix,2024-08-25,SAI,Ferrari,10.0,5.0,10.0,Finished
+2024_15,2024,Dutch Grand Prix,2024-08-25,PER,Red Bull Racing,5.0,6.0,8.0,Finished
+2024_15,2024,Dutch Grand Prix,2024-08-25,RUS,Mercedes,4.0,7.0,6.0,Finished
+2024_15,2024,Dutch Grand Prix,2024-08-25,HAM,Mercedes,14.0,8.0,4.0,Finished
+2024_15,2024,Dutch Grand Prix,2024-08-25,GAS,Alpine,9.0,9.0,2.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,ALO,Aston Martin,7.0,10.0,1.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,HUL,Haas F1 Team,12.0,11.0,0.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,RIC,RB,13.0,12.0,0.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,STR,Aston Martin,8.0,13.0,0.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,ALB,Williams,19.0,14.0,0.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,OCO,Alpine,15.0,15.0,0.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,SAR,Williams,18.0,16.0,0.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,TSU,RB,11.0,17.0,0.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,MAG,Haas F1 Team,20.0,18.0,0.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,BOT,Kick Sauber,16.0,19.0,0.0,Lapped
+2024_15,2024,Dutch Grand Prix,2024-08-25,ZHO,Kick Sauber,17.0,20.0,0.0,Lapped
+2024_16,2024,Italian Grand Prix,2024-09-01,LEC,Ferrari,4.0,1.0,25.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,PIA,McLaren,2.0,2.0,18.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,NOR,McLaren,1.0,3.0,16.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,SAI,Ferrari,5.0,4.0,12.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,HAM,Mercedes,6.0,5.0,10.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,VER,Red Bull Racing,7.0,6.0,8.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,RUS,Mercedes,3.0,7.0,6.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,PER,Red Bull Racing,8.0,8.0,4.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,ALB,Williams,9.0,9.0,2.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,MAG,Haas F1 Team,13.0,10.0,1.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,ALO,Aston Martin,11.0,11.0,0.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,COL,Williams,18.0,12.0,0.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,RIC,RB,12.0,13.0,0.0,Finished
+2024_16,2024,Italian Grand Prix,2024-09-01,OCO,Alpine,15.0,14.0,0.0,Lapped
+2024_16,2024,Italian Grand Prix,2024-09-01,GAS,Alpine,14.0,15.0,0.0,Lapped
+2024_16,2024,Italian Grand Prix,2024-09-01,BOT,Kick Sauber,19.0,16.0,0.0,Lapped
+2024_16,2024,Italian Grand Prix,2024-09-01,HUL,Haas F1 Team,10.0,17.0,0.0,Lapped
+2024_16,2024,Italian Grand Prix,2024-09-01,ZHO,Kick Sauber,20.0,18.0,0.0,Lapped
+2024_16,2024,Italian Grand Prix,2024-09-01,STR,Aston Martin,17.0,19.0,0.0,Lapped
+2024_16,2024,Italian Grand Prix,2024-09-01,TSU,RB,16.0,20.0,0.0,Retired
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,PIA,McLaren,2.0,1.0,25.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,LEC,Ferrari,1.0,2.0,18.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,RUS,Mercedes,5.0,3.0,15.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,NOR,McLaren,15.0,4.0,13.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,VER,Red Bull Racing,6.0,5.0,10.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,ALO,Aston Martin,7.0,6.0,8.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,ALB,Williams,9.0,7.0,6.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,COL,Williams,8.0,8.0,4.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,HAM,Mercedes,19.0,9.0,2.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,BEA,Haas F1 Team,10.0,10.0,1.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,HUL,Haas F1 Team,12.0,11.0,0.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,GAS,Alpine,18.0,12.0,0.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,RIC,RB,14.0,13.0,0.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,ZHO,Kick Sauber,17.0,14.0,0.0,Finished
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,OCO,Alpine,20.0,15.0,0.0,Lapped
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,BOT,Kick Sauber,16.0,16.0,0.0,Lapped
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,PER,Red Bull Racing,4.0,17.0,0.0,Retired
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,SAI,Ferrari,3.0,18.0,0.0,Retired
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,STR,Aston Martin,13.0,19.0,0.0,Retired
+2024_17,2024,Azerbaijan Grand Prix,2024-09-15,TSU,RB,11.0,20.0,0.0,Retired
+2024_18,2024,Singapore Grand Prix,2024-09-22,NOR,McLaren,1.0,1.0,25.0,Finished
+2024_18,2024,Singapore Grand Prix,2024-09-22,VER,Red Bull Racing,2.0,2.0,18.0,Finished
+2024_18,2024,Singapore Grand Prix,2024-09-22,PIA,McLaren,5.0,3.0,15.0,Finished
+2024_18,2024,Singapore Grand Prix,2024-09-22,RUS,Mercedes,4.0,4.0,12.0,Finished
+2024_18,2024,Singapore Grand Prix,2024-09-22,LEC,Ferrari,9.0,5.0,10.0,Finished
+2024_18,2024,Singapore Grand Prix,2024-09-22,HAM,Mercedes,3.0,6.0,8.0,Finished
+2024_18,2024,Singapore Grand Prix,2024-09-22,SAI,Ferrari,10.0,7.0,6.0,Finished
+2024_18,2024,Singapore Grand Prix,2024-09-22,ALO,Aston Martin,7.0,8.0,4.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,HUL,Haas F1 Team,6.0,9.0,2.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,PER,Red Bull Racing,13.0,10.0,1.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,COL,Williams,12.0,11.0,0.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,TSU,RB,8.0,12.0,0.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,OCO,Alpine,15.0,13.0,0.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,STR,Aston Martin,17.0,14.0,0.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,ZHO,Kick Sauber,20.0,15.0,0.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,BOT,Kick Sauber,19.0,16.0,0.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,GAS,Alpine,18.0,17.0,0.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,RIC,RB,16.0,18.0,0.0,Lapped
+2024_18,2024,Singapore Grand Prix,2024-09-22,MAG,Haas F1 Team,14.0,19.0,0.0,Retired
+2024_18,2024,Singapore Grand Prix,2024-09-22,ALB,Williams,11.0,20.0,0.0,Retired
+2024_20,2024,Mexico City Grand Prix,2024-10-27,SAI,Ferrari,1.0,1.0,25.0,Finished
+2024_20,2024,Mexico City Grand Prix,2024-10-27,NOR,McLaren,3.0,2.0,18.0,Finished
+2024_20,2024,Mexico City Grand Prix,2024-10-27,LEC,Ferrari,4.0,3.0,16.0,Finished
+2024_20,2024,Mexico City Grand Prix,2024-10-27,HAM,Mercedes,6.0,4.0,12.0,Finished
+2024_20,2024,Mexico City Grand Prix,2024-10-27,RUS,Mercedes,5.0,5.0,10.0,Finished
+2024_20,2024,Mexico City Grand Prix,2024-10-27,VER,Red Bull Racing,2.0,6.0,8.0,Finished
+2024_20,2024,Mexico City Grand Prix,2024-10-27,MAG,Haas F1 Team,7.0,7.0,6.0,Finished
+2024_20,2024,Mexico City Grand Prix,2024-10-27,PIA,McLaren,17.0,8.0,4.0,Finished
+2024_20,2024,Mexico City Grand Prix,2024-10-27,HUL,Haas F1 Team,10.0,9.0,2.0,Lapped
+2024_20,2024,Mexico City Grand Prix,2024-10-27,GAS,Alpine,8.0,10.0,1.0,Lapped
+2024_20,2024,Mexico City Grand Prix,2024-10-27,STR,Aston Martin,14.0,11.0,0.0,Lapped
+2024_20,2024,Mexico City Grand Prix,2024-10-27,COL,Williams,16.0,12.0,0.0,Lapped
+2024_20,2024,Mexico City Grand Prix,2024-10-27,OCO,Alpine,0.0,13.0,0.0,Lapped
+2024_20,2024,Mexico City Grand Prix,2024-10-27,BOT,Kick Sauber,15.0,14.0,0.0,Lapped
+2024_20,2024,Mexico City Grand Prix,2024-10-27,ZHO,Kick Sauber,19.0,15.0,0.0,Lapped
+2024_20,2024,Mexico City Grand Prix,2024-10-27,LAW,RB,12.0,16.0,0.0,Lapped
+2024_20,2024,Mexico City Grand Prix,2024-10-27,PER,Red Bull Racing,18.0,17.0,0.0,Lapped
+2024_20,2024,Mexico City Grand Prix,2024-10-27,ALO,Aston Martin,13.0,18.0,0.0,Retired
+2024_20,2024,Mexico City Grand Prix,2024-10-27,ALB,Williams,9.0,19.0,0.0,Retired
+2024_20,2024,Mexico City Grand Prix,2024-10-27,TSU,RB,11.0,20.0,0.0,Retired
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,RUS,Mercedes,1.0,1.0,25.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,HAM,Mercedes,10.0,2.0,18.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,SAI,Ferrari,2.0,3.0,15.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,LEC,Ferrari,4.0,4.0,12.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,VER,Red Bull Racing,5.0,5.0,10.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,NOR,McLaren,6.0,6.0,9.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,PIA,McLaren,8.0,7.0,6.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,HUL,Haas F1 Team,9.0,8.0,4.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,TSU,RB,7.0,9.0,2.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,PER,Red Bull Racing,15.0,10.0,1.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,ALO,Aston Martin,16.0,11.0,0.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,MAG,Haas F1 Team,12.0,12.0,0.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,ZHO,Kick Sauber,13.0,13.0,0.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,COL,Williams,20.0,14.0,0.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,STR,Aston Martin,18.0,15.0,0.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,LAW,RB,14.0,16.0,0.0,Finished
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,OCO,Alpine,11.0,17.0,0.0,Lapped
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,BOT,Kick Sauber,19.0,18.0,0.0,Lapped
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,ALB,Williams,17.0,19.0,0.0,Retired
+2024_22,2024,Las Vegas Grand Prix,2024-11-23,GAS,Alpine,3.0,20.0,0.0,Retired
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,NOR,McLaren,1.0,1.0,25.0,Finished
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,SAI,Ferrari,3.0,2.0,18.0,Finished
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,LEC,Ferrari,19.0,3.0,15.0,Finished
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,HAM,Mercedes,16.0,4.0,12.0,Finished
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,RUS,Mercedes,6.0,5.0,10.0,Finished
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,VER,Red Bull Racing,4.0,6.0,8.0,Finished
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,GAS,Alpine,5.0,7.0,6.0,Finished
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,HUL,Haas F1 Team,7.0,8.0,4.0,Finished
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,ALO,Aston Martin,8.0,9.0,2.0,Finished
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,PIA,McLaren,2.0,10.0,1.0,Finished
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,ALB,Williams,18.0,11.0,0.0,Lapped
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,TSU,RB,11.0,12.0,0.0,Lapped
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,ZHO,Kick Sauber,15.0,13.0,0.0,Lapped
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,STR,Aston Martin,13.0,14.0,0.0,Lapped
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,DOO,Alpine,17.0,15.0,0.0,Lapped
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,MAG,Haas F1 Team,14.0,16.0,0.0,Lapped
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,LAW,RB,12.0,17.0,0.0,Retired
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,BOT,Kick Sauber,9.0,18.0,0.0,Retired
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,COL,Williams,20.0,19.0,0.0,Retired
+2024_24,2024,Abu Dhabi Grand Prix,2024-12-08,PER,Red Bull Racing,10.0,20.0,0.0,Retired

@@ -1,0 +1,16 @@
+race,date,actual_winner,actual_grid,before_prediction,before_grid,before_correct,after_prediction,after_grid,after_correct
+Australian Grand Prix,2025-03-16,NOR,1,NOR,1,True,NOR,1,True
+Japanese Grand Prix,2025-04-06,VER,1,RUS,5,False,VER,1,True
+Bahrain Grand Prix,2025-04-13,PIA,1,LEC,2,False,PIA,1,True
+Emilia Romagna Grand Prix,2025-05-18,VER,2,PIA,1,False,PIA,1,False
+Canadian Grand Prix,2025-06-15,RUS,1,VER,2,False,RUS,1,True
+Austrian Grand Prix,2025-06-29,NOR,1,LEC,2,False,NOR,1,True
+British Grand Prix,2025-07-06,NOR,3,PIA,2,False,VER,1,False
+Hungarian Grand Prix,2025-08-03,NOR,3,LEC,1,False,LEC,1,False
+Dutch Grand Prix,2025-08-31,PIA,1,PIA,1,True,PIA,1,True
+Italian Grand Prix,2025-09-07,VER,1,PIA,3,False,VER,1,True
+Azerbaijan Grand Prix,2025-09-21,VER,1,VER,1,True,VER,1,True
+Singapore Grand Prix,2025-10-05,RUS,1,RUS,1,True,RUS,1,True
+Mexico City Grand Prix,2025-10-26,NOR,1,NOR,1,True,NOR,1,True
+Las Vegas Grand Prix,2025-11-22,VER,2,VER,2,True,NOR,1,False
+Abu Dhabi Grand Prix,2025-12-07,VER,1,VER,1,True,VER,1,True
