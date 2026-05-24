@@ -527,5 +527,6 @@ def predict_custom():
 
 
 if __name__ == '__main__':
-    # Run locally on port 5000
-    app.run(debug=True, host='127.0.0.1', port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    debug = os.environ.get('RENDER') is None  # disable debug on Render
+    app.run(debug=debug, host='0.0.0.0', port=port)
