@@ -194,49 +194,61 @@ def init_models():
     data_state["train_df"] = train_df
     data_state["test_df"] = test_df
 
-    # Train Before Qualifying Model
-    X_train_before = train_df[BEFORE_FEATURES]
-    y_train_before = train_df.groupby("race_id", sort=False)["position"].transform(position_relevance)
-    group_train = train_df.groupby("race_id", sort=False).size().values
-
-    model_before = XGBRanker(
-        objective="rank:pairwise",
-        learning_rate=0.1,
-        n_estimators=200,
-        max_depth=6,
-        eval_metric="ndcg",
-    )
-    model_before.fit(
-        X_train_before,
-        y_train_before,
-        group=group_train,
-        verbose=False,
-    )
+    # Load or Train Before Qualifying Model
+    before_path = os.path.join(BASE_DIR, "model_before.json")
+    model_before = XGBRanker()
+    if os.path.exists(before_path):
+        print(f"Loading pre-trained before-qualifying model from: {before_path}", flush=True)
+        model_before.load_model(before_path)
+    else:
+        print("Pre-trained before-qualifying model NOT found. Training on the fly...", flush=True)
+        X_train_before = train_df[BEFORE_FEATURES]
+        y_train_before = train_df.groupby("race_id", sort=False)["position"].transform(position_relevance)
+        group_train = train_df.groupby("race_id", sort=False).size().values
+        model_before = XGBRanker(
+            objective="rank:pairwise",
+            learning_rate=0.1,
+            n_estimators=200,
+            max_depth=6,
+            eval_metric="ndcg",
+        )
+        model_before.fit(
+            X_train_before,
+            y_train_before,
+            group=group_train,
+            verbose=False,
+        )
     models["before"] = model_before
-    print("Before-qualifying model trained.", flush=True)
 
-    # Train After Qualifying Model
-    X_train_after = train_df[AFTER_FEATURES]
-    y_train_after = winner_relevance(train_df["position"])
-
-    model_after = XGBRanker(
-        objective="rank:pairwise",
-        learning_rate=0.05,
-        n_estimators=300,
-        max_depth=4,
-        subsample=0.9,
-        colsample_bytree=0.9,
-        eval_metric="ndcg",
-        random_state=42,
-    )
-    model_after.fit(
-        X_train_after,
-        y_train_after,
-        group=group_train,
-        verbose=False,
-    )
+    # Load or Train After Qualifying Model
+    after_path = os.path.join(BASE_DIR, "model_after.json")
+    model_after = XGBRanker()
+    if os.path.exists(after_path):
+        print(f"Loading pre-trained after-qualifying model from: {after_path}", flush=True)
+        model_after.load_model(after_path)
+    else:
+        print("Pre-trained after-qualifying model NOT found. Training on the fly...", flush=True)
+        X_train_after = train_df[AFTER_FEATURES]
+        y_train_after = winner_relevance(train_df["position"])
+        group_train = train_df.groupby("race_id", sort=False).size().values
+        model_after = XGBRanker(
+            objective="rank:pairwise",
+            learning_rate=0.05,
+            n_estimators=300,
+            max_depth=4,
+            subsample=0.9,
+            colsample_bytree=0.9,
+            eval_metric="ndcg",
+            random_state=42,
+        )
+        model_after.fit(
+            X_train_after,
+            y_train_after,
+            group=group_train,
+            verbose=False,
+        )
     models["after"] = model_after
-    print("Models trained successfully!", flush=True)
+    print("Models initialized successfully!", flush=True)
 
 
 # Train models on start
