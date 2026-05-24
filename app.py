@@ -1,13 +1,28 @@
 import os
+import sys
+import traceback
 import numpy as np
 import pandas as pd
 from flask import Flask, jsonify, request, render_template
 from xgboost import XGBRanker
 
-app = Flask(__name__, template_folder='templates', static_folder='static')
+# Resolve all file paths relative to this script's directory
+# so gunicorn finds them regardless of working directory.
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-TRAIN_FILES = ["f1_2022.csv", "f1_2023.csv", "f1_2024.csv", "f1_2025.csv"]
-TEST_FILE = "f1_2026.csv"
+app = Flask(
+    __name__,
+    template_folder=os.path.join(BASE_DIR, 'templates'),
+    static_folder=os.path.join(BASE_DIR, 'static'),
+)
+
+TRAIN_FILES = [
+    os.path.join(BASE_DIR, "f1_2022.csv"),
+    os.path.join(BASE_DIR, "f1_2023.csv"),
+    os.path.join(BASE_DIR, "f1_2024.csv"),
+    os.path.join(BASE_DIR, "f1_2025.csv"),
+]
+TEST_FILE = os.path.join(BASE_DIR, "f1_2026.csv")
 GRID_WEIGHT = 1.0
 
 # Global state to hold models, clean combined data, and encodings
@@ -142,9 +157,13 @@ def winner_relevance(position):
 
 
 def init_models():
-    print("Initializing and training models...")
+    print("Initializing and training models...", flush=True)
+    print(f"BASE_DIR: {BASE_DIR}", flush=True)
+    print(f"CSV files: {TRAIN_FILES + [TEST_FILE]}", flush=True)
+
     train_raw, test_raw = load_data()
-    
+    print(f"Data loaded — train: {len(train_raw)} rows, test: {len(test_raw)} rows", flush=True)
+
     # Store raw test dataset to fetch races and initial layouts easily
     data_state["test_raw"] = test_raw.copy()
 
@@ -167,7 +186,7 @@ def init_models():
 
     # Build features on cleaned combined data
     combined_clean_feat = add_features(combined_clean)
-    
+
     train_df = combined_clean_feat[combined_clean_feat["split"] == "train"].copy()
     test_df = combined_clean_feat[combined_clean_feat["split"] == "test"].copy()
 
@@ -194,6 +213,7 @@ def init_models():
         verbose=False,
     )
     models["before"] = model_before
+    print("Before-qualifying model trained.", flush=True)
 
     # Train After Qualifying Model
     X_train_after = train_df[AFTER_FEATURES]
@@ -216,11 +236,16 @@ def init_models():
         verbose=False,
     )
     models["after"] = model_after
-    print("Models trained successfully!")
+    print("Models trained successfully!", flush=True)
 
 
 # Train models on start
-init_models()
+try:
+    init_models()
+except Exception as e:
+    print(f"FATAL: Failed to initialize models: {e}", flush=True)
+    traceback.print_exc()
+    sys.exit(1)
 
 
 @app.route('/')
