@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Race Predictor - AI Race Outcome Intelligence</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Vanilla CSS Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="carbon-overlay"></div>
+    
+    <header class="app-header">
+        <div class="header-container">
+            <div class="brand-logo">
+                <span class="f1-red-tag">F1</span>
+                <h1>Race Predictor <span class="header-subtitle">AI Intelligence</span></h1>
+            </div>
+            <div class="system-status">
+                <div class="status-indicator live"></div>
+                <span>Predictor Engine Active (XGBoost)</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- Stats Summary Section -->
+        <section class="stats-row" aria-label="Dashboard Stats Summary">
+            <div class="stat-card" id="stat-before-acc">
+                <div class="stat-icon icon-before">⏱</div>
+                <div class="stat-content">
+                    <span class="stat-label">Before Qualifying Acc.</span>
+                    <span class="stat-value" id="val-before-acc">--%</span>
+                </div>
+            </div>
+            <div class="stat-card" id="stat-after-acc">
+                <div class="stat-icon icon-after">🏁</div>
+                <div class="stat-content">
+                    <span class="stat-label">After Qualifying Acc.</span>
+                    <span class="stat-value" id="val-after-acc">--%</span>
+                </div>
+            </div>
+            <div class="stat-card" id="stat-overlap">
+                <div class="stat-icon icon-overlap">👥</div>
+                <div class="stat-content">
+                    <span class="stat-label">Avg Top-3 Overlap</span>
+                    <span class="stat-value" id="val-overlap">-- / 3</span>
+                </div>
+            </div>
+            <div class="stat-card" id="stat-races-count">
+                <div class="stat-icon icon-races">📅</div>
+                <div class="stat-content">
+                    <span class="stat-label">Races Evaluated</span>
+                    <span class="stat-value" id="val-races-count">--</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Dashboard Content Grid -->
+        <div class="dashboard-grid">
+            <!-- Left Panel: Race List Explorer & Model Metrics -->
+            <section class="left-panel" aria-label="Races and Performance">
+                <!-- Chart Panel -->
+                <div class="glass-panel chart-panel">
+                    <h2 class="panel-title">Model Performance Comparison</h2>
+                    <div class="chart-container">
+                        <canvas id="accuracyChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Race Explorer -->
+                <div class="glass-panel races-panel">
+                    <h2 class="panel-title">2026 Race Calendar Explorer</h2>
+                    <div class="races-list-header">
+                        <span>Select a race to view details and customize starting grids.</span>
+                    </div>
+                    <div class="races-list" id="races-list-container">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Panel: Race Details & Live Interactive Grid Customizer -->
+            <section class="right-panel" aria-label="Interactive Prediction Console" id="prediction-console">
+                <!-- Fallback Empty State -->
+                <div class="empty-state" id="empty-state-panel">
+                    <div class="empty-icon">🏎</div>
+                    <h3>No Race Selected</h3>
+                    <p>Select any completed or upcoming Grand Prix from the 2026 Calendar Explorer to inspect model predictions, view actual results, or run custom grid simulations!</p>
+                </div>
+
+                <!-- Live Prediction Workspace (Hidden initially) -->
+                <div class="workspace-panel hidden" id="workspace-panel">
+                    <!-- Race Workspace Header -->
+                    <div class="workspace-header">
+                        <div>
+                            <span class="workspace-badge" id="race-status-badge">Completed</span>
+                            <h2 id="selected-race-title">Australian Grand Prix</h2>
+                            <p class="text-secondary" id="selected-race-date">Date: March 16, 2025</p>
+                        </div>
+                    </div>
+
+                    <!-- Predictions Panel (Tabs / View Switcher) -->
+                    <div class="workspace-tabs">
+                        <button class="tab-btn active" id="tab-btn-predictions" onclick="switchTab('predictions')">Race Summary & Predictions</button>
+                        <button class="tab-btn" id="tab-btn-customizer" onclick="switchTab('customizer')">Live Custom Grid Predictor</button>
+                    </div>
+
+                    <!-- Tab 1: Race Predictions and Summary -->
+                    <div class="tab-content" id="tab-predictions">
+                        <!-- Podium Podium Podium! -->
+                        <div class="podium-section" id="race-podium">
+                            <div class="podium-spot second">
+                                <div class="driver-avatar">P2</div>
+                                <span class="driver-name" id="podium-p2-name">--</span>
+                                <span class="driver-team" id="podium-p2-team">--</span>
+                                <span class="grid-indicator">Grid <span id="podium-p2-grid">--</span></span>
+                            </div>
+                            <div class="podium-spot first">
+                                <div class="driver-avatar trophy">🏆</div>
+                                <span class="driver-name" id="podium-p1-name">--</span>
+                                <span class="driver-team" id="podium-p1-team">--</span>
+                                <span class="grid-indicator">Grid <span id="podium-p1-grid">--</span></span>
+                            </div>
+                            <div class="podium-spot third">
+                                <div class="driver-avatar">P3</div>
+                                <span class="driver-name" id="podium-p3-name">--</span>
+                                <span class="driver-team" id="podium-p3-team">--</span>
+                                <span class="grid-indicator">Grid <span id="podium-p3-grid">--</span></span>
+                            </div>
+                        </div>
+
+                        <!-- Drivers Standings Table -->
+                        <div class="standings-section">
+                            <h3 class="section-title">Full Predicted & Actual Standings</h3>
+                            <div class="table-container">
+                                <table class="standings-table" id="standings-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Pos</th>
+                                            <th>Driver</th>
+                                            <th>Team</th>
+                                            <th>Starting Grid</th>
+                                            <th class="col-before">Before Qual. Rank</th>
+                                            <th class="col-after">After Qual. Rank</th>
+                                            <th class="col-actual">Actual Finish</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="standings-body">
+                                        <!-- Dynamic standing rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Custom Grid Predictor -->
+                    <div class="tab-content hidden" id="tab-customizer">
+                        <div class="customizer-intro">
+                            <span class="intro-badge">Interactive Simulation</span>
+                            <h3>Simulate Custom Grid Positions</h3>
+                            <p>Rearrange the starting grids for this race by changing driver numbers (1 to 22). Click <strong>"Calculate AI Predictions"</strong> to see how the XGBRanker models shift their podiums and finishing probabilities dynamically based on grid values, driver forms, and team forms!</p>
+                        </div>
+
+                        <div class="customizer-actions">
+                            <button class="btn btn-secondary" onclick="resetCustomGrids()" id="btn-reset-grid">Reset to Original Grid</button>
+                            <button class="btn btn-primary" onclick="runCustomPrediction()" id="btn-run-prediction">Calculate AI Predictions ⚡</button>
+                        </div>
+
+                        <!-- Custom Grid Form -->
+                        <div class="custom-grid-container">
+                            <div class="grid-input-header">
+                                <span>Driver (Team)</span>
+                                <span>Starting Grid Position</span>
+                            </div>
+                            <div class="grid-input-list" id="custom-grid-list">
+                                <!-- Dynamic custom grid inputs -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 F1 AI Predictor | Built with Google Gemini 3.5 Flash & XGBoost</p>
+    </footer>
+
+    <!-- App JavaScript -->
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

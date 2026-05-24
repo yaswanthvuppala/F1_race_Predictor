@@ -11,10 +11,10 @@ This repository contains Formula 1 race prediction models trained on 2022-2024 r
 
 ## Setup
 
-Install the Python packages used by the predictors:
+Install the Python packages used by the predictors and dashboard:
 
 ```bash
-pip install pandas numpy xgboost matplotlib
+pip install pandas numpy xgboost matplotlib flask
 ```
 
 ## Run The Predictors
@@ -36,6 +36,22 @@ Compare both models graphically:
 ```bash
 python compare_f1_predictors.py
 ```
+
+## Interactive Web Dashboard (Deployment)
+
+To launch the premium interactive web dashboard locally:
+
+```bash
+python app.py
+```
+
+Then open your browser and navigate to:
+[http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+### Dashboard Features
+- **Overall Model Comparison:** Explores cumulative correct predictions chronological progression for both models.
+- **Race Calendar Explorer:** Selects any race from the 2025 season to analyze predictions, view podiums, and check standings.
+- **Live Custom Grid Predictor:** Allows custom grid assignment (1-20) for any 2025 race, triggering real-time XGBRanker prediction updates to test what-if starting scenarios.
 
 The comparison script creates:
 
