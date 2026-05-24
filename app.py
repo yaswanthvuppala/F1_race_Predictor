@@ -1,10 +1,24 @@
-import os
 import sys
 import traceback
-import numpy as np
-import pandas as pd
-from flask import Flask, jsonify, request, render_template
-from xgboost import XGBRanker
+
+print("STAGE 1: Starting app.py...", flush=True)
+
+try:
+    print("STAGE 2: Importing os...", flush=True)
+    import os
+    print("STAGE 3: Importing numpy...", flush=True)
+    import numpy as np
+    print("STAGE 4: Importing pandas...", flush=True)
+    import pandas as pd
+    print("STAGE 5: Importing flask...", flush=True)
+    from flask import Flask, jsonify, request, render_template
+    print("STAGE 6: Importing xgboost...", flush=True)
+    from xgboost import XGBRanker
+    print("STAGE 7: Imports completed successfully!", flush=True)
+except Exception as e:
+    print("FATAL IMPORT ERROR:", e, flush=True)
+    traceback.print_exc(file=sys.stdout)
+    sys.exit(1)
 
 # Resolve all file paths relative to this script's directory
 # so gunicorn finds them regardless of working directory.
