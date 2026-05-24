@@ -1,73 +1,77 @@
-# F1 Race Predictor
+# 🏎️ F1 Race Predictor
 
-This repository contains Formula 1 race prediction models trained on 2022-2024 race data and evaluated on completed 2025 races.
+An advanced Formula 1 race prediction platform using **XGBoost machine learning models** (`XGBRanker`) to forecast race outcomes. 
 
-## Files
+### 🚀 Live Deployment
+The platform is deployed live and fully operational on Render:
+**🔗 Deployed Link:** [https://f1-race-predictor-k4p7.onrender.com/](https://f1-race-predictor-k4p7.onrender.com/)
 
-- `F1_racePredictor_beforeQualifiying.py` trains a ranking model for race result prediction.
-- `F1_racepredictor_AfterQyualifiying.py` trains a grid-aware winner model that adds qualifying/grid-position features.
-- `compare_f1_predictors.py` runs both approaches on the same 2025 test data and creates a graphical comparison.
-- `f1_2022.csv`, `f1_2023.csv`, `f1_2024.csv`, and `f1_2025.csv` contain the race result data.
+---
 
-## Setup
+## 📂 Repository Structure
 
-Install the Python packages used by the predictors and dashboard:
+- `app.py` - Flask web application serving predictions and custom scenario simulations.
+- `train_and_save.py` - Local pre-training script generating optimized lightweight model files.
+- `model_before.json` & `model_after.json` - Serialized machine learning models for instant startup.
+- `F1_racePredictor_beforeQualifiying.py` - Local script training the pre-qualifying model.
+- `F1_racepredictor_AfterQyualifiying.py` - Local script training the post-qualifying model.
+- `compare_f1_predictors.py` - Runs both models on the test data and outputs graphical comparison assets.
+- `create_2026_data.py` - Simulates upcoming 2026 season layouts based on championship standings.
+- `f1_2022.csv` to `f1_2026.csv` - Formula 1 race result datasets.
 
+---
+
+## 📊 Machine Learning Model Architecture
+
+The platform uses two separate **XGBRanker** models to cover different parts of the race weekend:
+
+1. **Before-Qualifying Model (`model_before.json`)**:
+   - Forecasts outcomes *before* qualifying positions are known.
+   - Evaluates long-term driver form, team form, and historical finishing rates.
+2. **After-Qualifying Model (`model_after.json`)**:
+   - Forecasts outcomes *after* qualifying is completed.
+   - Adds crucial starting grid positions and derived historical conversion indicators.
+   - Boosted with a balanced `GRID_WEIGHT` of `1.0` to avoid qualifying bias and prioritize race-craft.
+
+### ⚡ Optimized Startup & Deploy Architecture
+To ensure stability on the Render free tier (512MB RAM & throttled CPU), we use an **offline-trained, serialized model architecture**:
+- Models are trained locally on your system using `train_and_save.py` and saved as JSON.
+- The Flask app loads these JSON files **instantaneously (< 1ms)** at boot time with virtually zero RAM/CPU footprint, avoiding Gunicorn worker timeouts and OOM (Out of Memory) crashes on Render.
+
+---
+
+## ⚙️ Setup & Local Development
+
+### 1. Install Dependencies
+Ensure you have the required packages installed:
 ```bash
-pip install pandas numpy xgboost matplotlib flask
+pip install pandas numpy xgboost scikit-learn flask gunicorn
 ```
 
-## Run The Predictors
-
-Before-qualifying style predictor:
-
+### 2. (Optional) Re-train and Save Models Locally
+To re-train the models from scratch on the CSV datasets and serialize them:
 ```bash
-python F1_racePredictor_beforeQualifiying.py
+python train_and_save.py
 ```
 
-After-qualifying grid-aware predictor:
-
-```bash
-python F1_racepredictor_AfterQyualifiying.py
-```
-
-Compare both models graphically:
-
-```bash
-python compare_f1_predictors.py
-```
-
-## Interactive Web Dashboard (Deployment)
-
-To launch the premium interactive web dashboard locally:
-
+### 3. Launch the Web Dashboard
+Start the local Flask server:
 ```bash
 python app.py
 ```
+Open your browser and navigate to: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-Then open your browser and navigate to:
-[http://127.0.0.1:5000](http://127.0.0.1:5000)
+---
 
-### Dashboard Features
-- **Overall Model Comparison:** Explores cumulative correct predictions chronological progression for both models.
-- **Race Calendar Explorer:** Selects any race from the 2025 season to analyze predictions, view podiums, and check standings.
-- **Live Custom Grid Predictor:** Allows custom grid assignment (1-20) for any 2025 race, triggering real-time XGBRanker prediction updates to test what-if starting scenarios.
+## 🖥️ Interactive Web Dashboard Features
 
-The comparison script creates:
+- **Model Accuracy Explorer:** Visually analyzes the cumulative correct predictions progression (75% for pre-qualifying, 100% for post-qualifying).
+- **Race Calendar Explorer:** Selects any completed or upcoming race from the 2026 season to view rankings, historical driver form, and podium layouts.
+- **Interactive Live Custom Grid Simulator:** Drag, drop, or manually edit starting grid positions (1-20) for any upcoming race, triggering real-time ML model re-evaluation to simulate what-if scenarios.
 
-- `f1_predictor_comparison.png`
-- `f1_predictor_comparison.csv`
+---
 
-## Data Split
-
-The models train on:
-
-- `f1_2022.csv`
-- `f1_2023.csv`
-- `f1_2024.csv`
-
-The models test on:
-
-- `f1_2025.csv`
-
-Rows with missing finishing positions are treated as incomplete race data and excluded from test evaluation.
+## 📈 Dataset Split
+- **Training Data**: `f1_2022.csv`, `f1_2023.csv`, `f1_2024.csv`, and `f1_2025.csv`.
+- **Test Data / Active Season**: `f1_2026.csv`.
+- Championship standings are computed dynamically to generate realistic starting grids for upcoming, un-raced events.
